@@ -1,0 +1,31 @@
+{
+    "logo": {
+        "type": "kitty",
+        "source": "/home/serpens/Pictures/Art/Other/Tolkien/inscription.png",
+        "width": 25,
+        "padding": {
+            "top": 1,
+            "right": 2
+        }
+    },
+    "modules": [
+        "break",
+        "title",
+        "separator",
+        "os",
+        "cpu",
+        "gpu",
+        "memory",
+        "physicaldisk",
+        "board",
+        "separator",
+        "wm",
+        "shell",
+        "terminal",
+        "terminalfont",
+        "icons",
+        "break",
+        "colors",
+        "break"
+    ]
+}

@@ -1,0 +1,76 @@
+configuration {
+    show-icons: true;
+    font: "FiraCode Nerd Font Semibold 11";
+    terminal: "kitty";
+}
+
+* {
+    background: rgba(38, 41, 44, 0.85);
+    background-alt: rgba(38, 41, 44, 0.85);
+}
+
+window {
+    background: rgba(38, 41, 44, 0.85);
+    width: 20%;
+    border-radius: 15px;
+    padding: 10px;
+    border-color: transparent;
+}
+
+mainbox {
+    spacing: 10px;
+}
+
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       10;
+    scrollbar:                   false;
+    spacing:                     5px;
+    border-color:                transparent;
+    background-color:            transparent;
+    text-color:                  #F8F8F2;
+}
+
+inputbar {
+    background-color: #F8F8F210;
+    text-color: @foreground;
+    border-radius: 1em;
+    padding: 5px;
+    children: [ textbox-prompt-colon, entry ];
+}
+
+prompt {
+    text-color: #F8F8F2;
+}
+
+textbox-prompt-colon {
+    str: "";
+    align-horizontal: 5px;
+}
+
+entry {
+    placeholder: "";
+    text-color: #F8F8F2;
+}
+
+element {
+    padding: 5px;
+}
+
+element.normal.normal, element.normal.active,
+element.alternate.normal, element.alternate.active {
+    background-color: transparent;
+    text-color: #F8F8F2;
+}
+
+element.selected.normal, element.selected.active {
+    background-color: #F8F8F220;
+    text-color: #F8F8F2;
+    icon-color: rgba(38, 41, 44, 0.85);
+    border-radius: 1em;
+}
+
+element-text {
+    vertical-align: 0.5;
+}
