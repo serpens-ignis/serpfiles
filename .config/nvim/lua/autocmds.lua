@@ -20,3 +20,12 @@ vim.api.nvim_create_autocmd(
         end
     }
 )
+
+-- automatically resize splits when resizing nvim
+vim.api.nvim_create_autocmd(
+    "VimResized",
+    {
+        pattern = "*",
+        command = "wincmd =",
+    }
+)

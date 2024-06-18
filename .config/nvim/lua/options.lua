@@ -12,6 +12,18 @@ vim.opt.expandtab = true
 -- always show line numbering
 vim.opt.number = true
 
+-- always hide tabline
+vim.o.showtabline = 0
+
+-- set statusline to global
+vim.o.laststatus = 3
+
+-- hide statusline
+vim.o.statusline = " "
+
+-- hide cmd bar
+vim.o.cmdheight = 0
+
 -- line numbering relative to cursor
 vim.opt.relativenumber = true
 
@@ -21,8 +33,10 @@ vim.opt.termguicolors = true
 -- set font size for GUI nvim clients
 vim.opt.guifont = "FiraCode Nerd Font:h11"
 
--- always show status bar
-vim.opt.laststatus = 2
-
 -- use system clipboard for all operations
 vim.opt.clipboard:append { "unnamedplus" }
+
+-- diagnostic configuration
+vim.diagnostic.config {
+    severity_sort = true
+}
