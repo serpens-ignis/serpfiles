@@ -15,15 +15,28 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 export ZSH=/usr/share/oh-my-zsh/
 export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 export EDITOR="neovide"
+export NEOVIDE_FORK=1
 export GHIDRA_INSTALL_DIR=/opt/ghidra/
-export PATH=$PATH:/opt/devkitpro/devkitA64/bin
+export GOPATH=$HOME/.go
+
+# devkitPro
+export DEVKITPRO=/opt/devkitpro
+export DEVKITARM=/opt/devkitpro/devkitARM
+export DEVKITA64=/opt/devkitpro/devkitA64
+export PATH=$PATH:$DEVKITPRO/tools/bin
+
+# work trash
+export HAYSTACK_TELEMETRY_ENABLED=False
+export NLTK_DATA=~/.nltk_data
 
 ###########
 # Aliases #
 ###########
 
-alias vim="neovide --size 1x1" # random size prevents neovide from starting maximized
+alias vim="neovide"
 alias icat="kitten icat"
+alias r="ranger"
+alias rm="trash"
 
 ###########
 # Plugins #
@@ -45,3 +58,4 @@ source $ZSH/oh-my-zsh.sh
 
 # aliasing ls has to come last
 alias ls="eza --icons --group-directories-first -x"
+alias lt="eza --icons --group-directories-first -x -T"
