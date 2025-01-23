@@ -41,20 +41,13 @@
 | suru-plus-aspromauros-git   | Icon Pack                    |
 | gnome-themes-extra          | Themes for GTK Apps          |
 | lua-language-server         | LSP Server                   |
-| clang                       | C Compiler and LSP Server    |
 | (**) rustup                 | Rust Toolchain Installer     |
-| ruff-lsp                    | LSP Server                   |
-| pyright                     | LSP Server                   |
-| vscode-css-languageserver   | LSP Server                   |
+| zls                         | LSP Server                   |
+| clang                       | C Compiler and LSP Server    |
 | vscode-json-languageserver  | LSP Server                   |
+| vscode-css-languageserver   | LSP Server                   |
+| texlab                      | LSP Server                   |
 
 (*) Install optional dependencies for file previews
 
 (**) Install rust-analyzer for neovim LSP
-
-## TODO
-- Check out some more neovim plugins:
-  - lualine
-  - harpoon
-  - telescope
-- Create a repo for my airline theme, if I stick with it
