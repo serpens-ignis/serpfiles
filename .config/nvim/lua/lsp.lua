@@ -12,7 +12,7 @@ lsp_cfg.lua_ls.setup {
     settings = {
         Lua = {
             runtime = {
-                "LuaJIT"
+                version = "LuaJIT"
             },
             workspace = {
                 library = {
@@ -24,11 +24,11 @@ lsp_cfg.lua_ls.setup {
     }
 }
 
--- python
-lsp_cfg.ruff_lsp.setup {}
-
 -- rust
 lsp_cfg.rust_analyzer.setup {}
+
+-- zig
+lsp_cfg.zls.setup {}
 
 -- C, C++, Objective-C, Objective-C++, CUDA
 lsp_cfg.clangd.setup {
@@ -43,3 +43,6 @@ lsp_cfg.jsonls.setup {}
 
 -- CSS
 lsp_cfg.cssls.setup {}
+
+-- LaTeX
+lsp_cfg.texlab.setup {}

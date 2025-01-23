@@ -42,6 +42,7 @@ Plug(
     "nvim-treesitter/nvim-treesitter", -- Tree-sitter configs
     { ["do"] = vim.fn[":TSUpdate"] }
 )
+Plug("numToStr/Comment.nvim") -- Easy comment/uncomment bindings
 
 vim.call("plug#end")
 
@@ -54,3 +55,4 @@ require("plugins.indentline_cfg")
 require("plugins.lualine_cfg")
 require("plugins.telescope_cfg")
 require("plugins.noice_cfg")
+require("plugins.comment_cfg")

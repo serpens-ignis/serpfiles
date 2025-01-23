@@ -10,11 +10,11 @@
     "modules-right": [
         "privacy",
         "tray",
+        "battery",
         "cpu",
         "memory",
         "bluetooth",
-        "network",
-        "wireplumber",
+        "pulseaudio",
         "clock"
     ],
     "modules-center": [
@@ -71,6 +71,18 @@
             }
         ]
     },
+    "battery": {
+        "bat": "hid-e4:17:d8:94:7f:7c-battery",
+        "interval": 5,
+        "format": "{icon}    {capacity}%",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
     "cpu": {
         "format": " {usage}%",
         "interval": 1,
@@ -89,23 +101,7 @@
         "format-connected": "󰂱",
         "on-click": "kitty bluetuith"
     },
-    "network": {
-        "family": "ipv6",
-        "format-wifi": "{icon}",
-        "format-ethernet": "󰲝 ",
-        "format-disconnected": "󰲜 ",
-        "format-icons": [
-            "󰤯 ",
-            "󰤟 ",
-            "󰤢 ",
-            "󰤥 ",
-            "󰤨 "
-        ],
-        "tooltip-format-wifi": "SSID: {essid}\nInterface: {ifname}\nIP: {ipaddr}\nSignal: {signalStrength}%\nFrequency: {frequency}\nDownload: {bandwidthDownBytes}\nUpload: {bandwidthUpBytes}",
-        "tooltip-format-ethernet": "Interface: {ifname}\nIP: {ipaddr}\nDownload: {bandwidthDownBytes}\nUpload: {bandwidthUpBytes}",
-        "tooltip-format-disconnected": ""
-    },
-    "wireplumber": {
+    "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": "  {volume}%",
         "format-icons": [

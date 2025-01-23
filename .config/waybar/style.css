@@ -95,8 +95,7 @@ menu {
 #cpu:hover,
 #memory:hover,
 #bluetooth:hover,
-#network:hover,
-#wireplumber:hover {
+#pulseaudio:hover {
     background-color: @white;
     color: @bg;
 }
